@@ -2,10 +2,11 @@
 </button>
 
 <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="mi-modal">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Export Mencari - Kerja</h4>
+                <h4 class="modal-title text-body" id="myModalLabel">Export Data Mencari - Kerja <i
+                        class="fa fa-print"></i></h4>
             </div>
             <div class="modal-body">
                 <p>Apakah anda yakin ingin export record ini ?</p>

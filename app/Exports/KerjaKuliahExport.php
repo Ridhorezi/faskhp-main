@@ -13,6 +13,7 @@ use Maatwebsite\Excel\Concerns\WithCustomStartCell;
 use Maatwebsite\Excel\Concerns\WithEvents;
 use Maatwebsite\Excel\Events\AfterSheet;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
+use Carbon\Carbon;
 
 class KerjaKuliahExport implements
     FromQuery,
@@ -43,18 +44,18 @@ class KerjaKuliahExport implements
                 $event->sheet
                     ->getDelegate()
                     ->getRowDimension('2')
-                    ->setRowHeight(30);
+                    ->setRowHeight(47);
 
                 $event->sheet
                     ->getDelegate()
                     ->getStyle('1')
                     ->getFont()
-                    ->setSize(14);
+                    ->setSize(12);
                 $event->sheet
                     ->getDelegate()
                     ->getStyle('2')
                     ->getFont()
-                    ->setSize(14);
+                    ->setSize(12);
 
                 $event->sheet
                     ->getDelegate()
@@ -67,9 +68,13 @@ class KerjaKuliahExport implements
 
                 $event->sheet->setCellValue(
                     'B1',
-                    'Forum Alumni SMK KESEHATAN HUSADA PRATAMA'
+                    'FORUM ALUMNI SMK KESEHATAN HUSADA PRATAMA'
                 );
-                $event->sheet->setCellValue('B2', 'Data Kerja Dan Kuliah :');
+
+                $event->sheet->setCellValue(
+                    'B2',
+                    'Tanggal Di Cetak  :  ' . Carbon::now()
+                );
 
                 $event->sheet
                     ->getDelegate()
@@ -84,10 +89,21 @@ class KerjaKuliahExport implements
 
                 $event->sheet
                     ->getDelegate()
-                    ->getStyle('C:N')
+                    ->getStyle('C')
                     ->getAlignment()
                     ->setHorizontal(
                         \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_LEFT
+                    )
+                    ->setVertical(
+                        \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER
+                    );
+
+                $event->sheet
+                    ->getDelegate()
+                    ->getStyle('D:N')
+                    ->getAlignment()
+                    ->setHorizontal(
+                        \PhpOffice\PhpSpreadsheet\Style\Alignment::HORIZONTAL_CENTER
                     )
                     ->setVertical(
                         \PhpOffice\PhpSpreadsheet\Style\Alignment::VERTICAL_CENTER

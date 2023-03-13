@@ -161,7 +161,7 @@
                                     @if ($modelQuery->gambar)
                                         <div class="form-group">
                                             <img src="{{ asset('storage/kerja/' . $modelQuery->gambar) }}"
-                                                style="max-width:300px;max-height:300px">
+                                                style="max-width:300px;max-height:300px;border-radius:5px;">
                                         </div>
                                     @endif
                                 @elseif($tableType == 'kuliah')
@@ -183,7 +183,7 @@
                                     @if ($modelQuery->gambar)
                                         <div class="form-group">
                                             <img src="{{ asset('storage/kuliah/' . $modelQuery->gambar) }}"
-                                                style="max-width:300px;max-height:300px">
+                                                style="max-width:300px;max-height:300px;border-radius:5px;">
                                         </div>
                                     @endif
                                 @elseif($tableType == 'kerjakuliah')
@@ -220,7 +220,7 @@
                                     @if ($modelQuery->gambar)
                                         <div class="form-group">
                                             <img src="{{ asset('storage/kerjakuliah/' . $modelQuery->gambar) }}"
-                                                style="max-width:300px;max-height:300px">
+                                                style="max-width:300px;max-height:300px;border-radius:5px;">
                                         </div>
                                     @endif
                                 @elseif($tableType == 'mencarikerja')
@@ -246,7 +246,7 @@
                                     @if ($modelQuery->gambar)
                                         <div class="form-group">
                                             <img src="{{ asset('storage/mencarikerja/' . $modelQuery->gambar) }}"
-                                                style="max-width:300px;max-height:300px">
+                                                style="max-width:300px;max-height:300px;border-radius:5px;">
                                         </div>
                                     @endif
                                 @else
@@ -273,7 +273,7 @@
                                     @if ($modelQuery->gambar)
                                         <div class="form-group">
                                             <img src="{{ asset('storage/usaha/' . $modelQuery->gambar) }}"
-                                                style="max-width:300px;max-height:300px">
+                                                style="max-width:300px;max-height:300px;border-radius:5px;">
                                         </div>
                                     @endif
                                 @endif

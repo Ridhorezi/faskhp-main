@@ -84,7 +84,8 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="{{ asset('storage/usaha/' . $imgPreview) }}" class="img-fluid">
+                                <img src="{{ asset('storage/usaha/' . $imgPreview) }}" class="img-fluid"
+                                    style="border-radius:10px;">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

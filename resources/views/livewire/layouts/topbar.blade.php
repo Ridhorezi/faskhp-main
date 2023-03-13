@@ -30,7 +30,7 @@
                         <a href="javascript:;" class="nav-link text-body p-0 text-truncate" style="max-width: 200px;">
                             <span class="d-sm-inline  p-1" style="">
                                 {{ Auth::user()->name }}
-                                <i class="fa fa-cog p-1 fixed-plugin-button-nav"></i>
+                                <i class="fa fa-user p-1 fixed-plugin-button-nav"></i>
                             </span>
                         </a>
 

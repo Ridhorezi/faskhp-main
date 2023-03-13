@@ -55,9 +55,6 @@
     <link id="pagestyle" href="{{ asset('assets/admin') }}/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/toastr/toastr.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/fontawesome/css/all.min.css') }}">
-{{--
-    <link href="https://cdn.datatables.net/v/dt/dt-1.13.2/datatables.min.css" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css"> --}}
 
 
     @livewireStyles
